@@ -6,4 +6,3 @@
 * Backend structure created
 * Resume Review module in development
 * Community contributions welcome
-
