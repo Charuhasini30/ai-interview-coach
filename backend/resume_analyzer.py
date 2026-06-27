@@ -1,4 +1,5 @@
+from gemini_client import get_resume_feedback
+
 def analyze_resume(resume_text):
-    return {
-        "feedback": f"Resume received. Length: {len(resume_text)} characters."
-    }
+    feedback = get_resume_feedback(resume_text)
+    return {"feedback": feedback}
