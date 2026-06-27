@@ -1,8 +1,29 @@
-## Current Development Status
+# Backend Setup
 
-### Version 0.1
+## Install Dependencies
 
-* Repository setup completed
-* Backend structure created
-* Resume Review module in development
-* Community contributions welcome
+```bash
+pip install -r requirements.txt
+```
+
+## Run the Server
+
+```bash
+uvicorn main:app --reload
+```
+
+## API Endpoints
+
+### GET /
+
+Health check endpoint.
+
+### POST /analyze-resume
+
+Accepts:
+
+```json
+{
+  "resume_text": "Your resume text"
+}
+```
