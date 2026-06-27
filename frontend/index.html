@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Interview Coach</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+
+    <h1>AI Interview Coach</h1>
+
+    <textarea id="resume" rows="10" cols="60"
+        placeholder="Paste your resume here..."></textarea>
+    
+    <br><br>
+
+    <button onclick="analyzeResume()">Analyze Resume</button>
+
+    <h3>Feedback:</h3>
+    <pre id="output"></pre>
+
+    <script>
+        async function analyzeResume() {
+            const resume = document.getElementById("resume").value;
+
+            const response = await fetch("http://127.0.0.1:8000/analyze-resume", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    resume_text: resume
+                })
+            });
+
+            const data = await response.json();
+            document.getElementById("output").innerText = data.feedback;
+        }
+    </script>
+
+</body>
+</html>
