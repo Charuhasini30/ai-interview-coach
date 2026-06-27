@@ -1,4 +1,7 @@
 fastapi
 uvicorn
-google-generativeai
 python-dotenv
+transformers
+torch
+sentencepiece
+accelerate
