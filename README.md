@@ -42,27 +42,54 @@ AI Interview Coach is an open-source platform that helps students and job seeker
 
 ### AI Integration
 
-* Gemini API
+* Hugging Face Transformers
+* DistilGPT2
+
+No API key required. The project uses open-source transformer models for resume analysis and interview assistance.
 
 ## Getting Started
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ai-interview-coach.git
+git clone https://github.com/Charuhasini30/ai-interview-coach.git
 ```
 
-### Install Dependencies
+### Backend Setup
 
 ```bash
+cd backend
 pip install -r requirements.txt
-```
-
-### Run the Backend
-
-```bash
 uvicorn main:app --reload
 ```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Open Source Friendly
+
+This project is designed to be easy for first-time contributors.
+
+* No paid APIs required
+* No API keys required
+* Uses open-source AI models
+* Beginner-friendly issues available
+
+## Current Status
+
+### Version 1.0
+
+* React frontend completed
+* FastAPI backend completed
+* Resume analysis module implemented
+* Dashboard and career tools added
+* Open-source contribution workflow established
+* Hugging Face Transformers integration completed
 
 ## Contributing
 
