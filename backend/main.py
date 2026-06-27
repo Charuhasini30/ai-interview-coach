@@ -1,8 +1,18 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from models import ResumeRequest
 from resume_analyzer import analyze_resume
 
 app = FastAPI()
+
+# Allow frontend to talk to backend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # later we will restrict this in production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def home():
