@@ -97,6 +97,23 @@ We welcome contributions from developers of all experience levels.
 
 Please read CONTRIBUTING.md before submitting a pull request.
 
+### Contribution Guidelines
+
+This project is open to all contributors.
+
+No assignment is required. Feel free to fork the repository, work on any open issue, and submit a pull request.
+
+If multiple pull requests are submitted for the same issue, the best implementation will be reviewed and merged.
+
+## Good First Issues
+
+* Add company-specific interview questions
+* Improve UI/UX
+* Add dark mode
+* Improve documentation
+* Add new learning roadmaps
+
+
 ## Good First Issues
 
 * Add company-specific interview questions
