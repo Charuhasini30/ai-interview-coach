@@ -114,14 +114,6 @@ If multiple pull requests are submitted for the same issue, the best implementat
 * Add new learning roadmaps
 
 
-## Good First Issues
-
-* Add company-specific interview questions
-* Improve UI/UX
-* Add dark mode
-* Improve documentation
-* Add new learning roadmaps
-
 ## Roadmap
 
 * Resume Analyzer
